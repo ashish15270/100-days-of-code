@@ -1,0 +1,2 @@
+start day = 25 sept 2024
+target finish date = 1.1.2025
