@@ -1,0 +1,44 @@
+li {
+  list-style: none;
+  font-family: "Oswald";
+  font-size: 24px;
+  margin: 10px;
+  padding: 16px;
+  background-color: antiquewhite;
+  box-shadow: 1px 1px 4px rgba(0, 0,0, 0.2) ;
+}
+
+ol {
+  color: rgb(180, 75, 145);
+  width: 500px;
+  margin: 36px auto 0 auto;
+  padding: 0;
+}
+
+a {
+  background-color: rgb(167,1,78);
+  color: white;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 12px 48px;
+
+}
+
+a:hover {
+  background-color: rgb(180,12,19);
+  text-decoration: none;
+}
+
+#description {
+  margin: 35px;
+}
+
+main p {
+  color: rgb(71,29,22);
+}
+
+.daily-goals{
+  color: rgb(71,29,22);
+}
+
+
