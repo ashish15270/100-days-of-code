@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="challenge.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;">
+  <title>Form</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+    <main>
+      <h2>How can we help you?</h2>
+
+      <form action="">
+        <label for="your-name" class="info">Your name</label>
+        <input type="text" name="your-name">
+
+        <label for="your-email" class="info">Your email</label>
+        <input type="email" name="your-email">
+
+        <label for="your-phone"class="info">Your phone</label>
+        <input type="tel" name="your-phone">
+
+        <label for="message">Enter message</label>
+        <textarea name="message" id="message"></textarea>
+
+        <label for="origin">How did you find us?</label>
+        <select name="origin" id="drop">
+          <option value="Web">Web</option>
+          <option value="friend">Friends</option>
+          <option value="commercial">Commercials</option>
+        </select>
+
+        <ul>
+          <h2 id="reply-heading">How should we reply?</h2>
+        <li class="radio">
+          <input type="radio" name="reply" class="reply" value="telephone"> 
+          <label for="reply" class="reply"> Telephone
+        </label>
+        </li>
+        <li class="radio">
+          <input type="radio" name="reply" class="reply" value="email"> 
+          <label for="reply" class="reply">Email
+        </label>
+        </li>
+        
+        <li class="radio">
+          <input type="radio" name="reply" class="reply" value="no-reply"> 
+           <label for="reply" class="reply">Dont reply
+          
+        </label>
+        </li>
+       
+
+        </ul>
+        
+        <input class="reply" type="checkbox" name="Accept"> Accept Terms
+
+      </form>
+
+    </main>
+</body>
+</html>
