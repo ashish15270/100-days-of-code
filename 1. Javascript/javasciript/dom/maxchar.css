@@ -1,0 +1,34 @@
+body {
+  width: 45rem;
+  margin: auto;
+  color: rgb(72, 73, 73);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+}
+
+div p {
+  margin: 0 2rem;
+
+}
+
+body input {
+  width: 30rem;
+  height: 1.5rem;
+  border-radius: 6px;
+}
+
+#main {
+  background-color: rgb(174, 226, 226);
+  padding-bottom: 2rem;
+  border-radius: 6px;
+  border-color: rgb(136, 136, 136);
+}
+
+input.warning {
+  color: red;
+}
