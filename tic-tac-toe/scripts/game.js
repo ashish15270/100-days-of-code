@@ -1,7 +1,7 @@
 function resetGameStatus() {
   activePlayer = 0
   currentRound = 1
-  gameIsOver = true
+  gameIsOver = false
   gameOverEle.firstElementChild.innerHTML = 
   '<h2>You won! <span id="winner-name">Player Name</span></h2>'
 
@@ -45,6 +45,7 @@ function selectGameField(event) {
   const selectedRow = selectedField.dataset.row
 
   if (gameData[selectedRow-1][selectedCol-1]>0 || gameIsOver) {
+    console.log(gameData)
     alert('Please select  a valid field')
     return
   }
