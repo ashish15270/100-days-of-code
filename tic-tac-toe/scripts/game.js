@@ -2,7 +2,6 @@ function resetGameStatus() {
   activePlayer = 0
   currentRound = 1
   gameIsOver = false
-  console.log(gameData)
   gameOverEle.firstElementChild.innerHTML = 
   '<h2>You won! <span id="winner-name">Player Name</span></h2>'
 
@@ -117,7 +116,6 @@ function endGame(winnerId){
 
   if (winnerId > 0){
     gameAreaEle.firstElementChild.firstElementChild.textContent = 'You won ' + players[winnerId-1].name
-    console.log(gameData)
   }
   else {
     gameOverEle.firstElementChild.textContent = 'It\'s a draw'
