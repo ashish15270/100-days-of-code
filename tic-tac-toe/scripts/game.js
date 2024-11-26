@@ -2,6 +2,7 @@ function resetGameStatus() {
   activePlayer = 0
   currentRound = 1
   gameIsOver = false
+  console.log(gameData)
   gameOverEle.firstElementChild.innerHTML = 
   '<h2>You won! <span id="winner-name">Player Name</span></h2>'
 
@@ -78,7 +79,7 @@ function checkForGameover () {
 //check for rows
 for (let i=0;i<3;i++){
   if (
-    gameData[i][0] > 0 && 
+    gameData[0][i] > 0 && 
     gameData[0][i] === gameData[1][i] && 
     gameData[1][i] === gameData[2][i]
   ){
@@ -98,9 +99,10 @@ if (
 if (
   gameData[0][2]>0 && 
   gameData[0][2]=== gameData[1][1] && 
-  gameData[1][1] === gameData[2][1]
+  gameData[1][1] === gameData[2][0]
 ) {
-  return gameData[0][0]
+  return gameData[0][2]
+  
 }
 
 if (currentRound === 9){
@@ -115,6 +117,7 @@ function endGame(winnerId){
 
   if (winnerId > 0){
     gameAreaEle.firstElementChild.firstElementChild.textContent = 'You won ' + players[winnerId-1].name
+    console.log(gameData)
   }
   else {
     gameOverEle.firstElementChild.textContent = 'It\'s a draw'
