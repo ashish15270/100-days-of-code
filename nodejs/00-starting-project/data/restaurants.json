@@ -1,0 +1,16 @@
+[
+  {
+    "name": "haldiram",
+    "address": "bangalore",
+    "cuisine": "Indian",
+    "website": "https://www.haldirams.com",
+    "description": "very tasty"
+  },
+  {
+    "name": "bikaner",
+    "address": "gurugram",
+    "cuisine": "Indian",
+    "website": "https://www.bikaner.com",
+    "description": "very tasty"
+  }
+]

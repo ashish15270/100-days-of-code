@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('includes/head') %>
+    <link rel="stylesheet" href="styles/restaurants.css" />
+    <script src="scripts/responsive.js" defer></script>
+  </head>
+  <body>
+    <%- include('includes/header') %>
+    <%- include('includes/side-drawers') %>
+    <main>
+      <h1>Recommended restaurants</h1>
+      <% if (numberOfRestaurants === 0) {%>
+        <P> We have no restaurants yet, Please recommend some.</p>
+        <% } else { %>
+      <p>Find your next favorite restaurants with help of our other users!</p>
+      <p>We found <%= numberOfRestaurants %> restaurants</p>
+      <ul id="restaurants-list">
+        <% for (const restaurant of restaurants) { %>
+          <%- include('includes/restaurants/restaurant-item.ejs', {restaurant: restaurant }) %>
+        <% } %>
+      </ul>
+      <% } %>
+    </main>
+  </body> 
+</html>
