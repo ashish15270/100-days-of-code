@@ -1,16 +1,26 @@
 [
   {
-    "name": "haldiram",
+    "id": "r1",
+    "name": "Haldiram",
     "address": "bangalore",
     "cuisine": "Indian",
     "website": "https://www.haldirams.com",
     "description": "very tasty"
   },
   {
-    "name": "bikaner",
+    "id": "r2",
+    "name": "Bikaner",
     "address": "gurugram",
     "cuisine": "Indian",
     "website": "https://www.bikaner.com",
     "description": "very tasty"
+  },
+  {
+    "name": "Harish Phulwari",
+    "address": "Bhiwadi",
+    "cuisine": "Indian",
+    "website": "https://www.harishbakery.com/",
+    "description": "very good food",
+    "id": "388b6c0c-2203-4392-819d-10097fc23c6f"
   }
 ]
