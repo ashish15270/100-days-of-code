@@ -1,0 +1,1 @@
+db.blog.insertOne({title: 'test post-2',summary: 'test summary',body: 'test content',author: {name: 'ashish kumar',email: 'ashish@test.com'}})
